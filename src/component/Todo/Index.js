@@ -101,7 +101,7 @@ console.log( type )
                     <a id="download" href="" download="todos.json" onClick={this.handleClickExport}
                      className="btn btn-outline-primary btn-sm">Export
                     </a> 
-                    <Link to="/todo_import"
+                    <Link to="/todo_import"  target="_blank"
                      className="btn btn-sm btn-outline-primary ml-2">Import
                     </Link>
                 </div>

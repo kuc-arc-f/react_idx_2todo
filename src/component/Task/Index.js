@@ -64,7 +64,7 @@ console.log( tasks )
                     <a id="download" href="" download="tasks.json" onClick={this.handleClickExport}
                      className="btn btn-outline-primary btn-sm">Export
                     </a> 
-                    <Link to="/task_import"
+                    <Link to="/task_import" target="_blank"
                      className="btn btn-sm btn-outline-primary ml-2">Import
                     </Link>
                 </div>
