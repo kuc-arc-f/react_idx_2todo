@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Dexie from 'dexie';
 import marked from  'marked'
 import LibTodo from '../../libs/LibTodo';
+import LibCommon from '../../libs/LibCommon';
 
 import '../../css/TodoShow.css';
 //
@@ -30,6 +31,7 @@ class Show extends Component {
     async get_item(id){
         var item = await this.db.todos.get(id);
         item.content = marked(item.content)
+        item.created_at = LibCommon.formatDate(item.created_at, 'YYYY-MM-DD hh:mm')
         this.setState({ 
             title: item.title, 
             content: item.content,
@@ -48,6 +50,7 @@ class Show extends Component {
             <Link to="/todo" className="btn btn-outline-primary mt-2">Back</Link>
             <hr className="mt-2 mb-2" />            
             <h1>{this.state.title}</h1>
+            Date : {this.state.created_at}
             <hr />
             <div id="post_item" 
             dangerouslySetInnerHTML={{ __html: this.state.content }}></div>
