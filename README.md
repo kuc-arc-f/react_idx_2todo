@@ -6,7 +6,7 @@
 
  date    : 2020/07/24
 
- update  : 2020/07/26 
+ update  : 2020/07/26
 
 ***
 ### Summary
@@ -56,6 +56,8 @@ https://react-idx-kuc.netlify.app/#/todo
 
 ***
 ### Blog :
+
+https://note.com/knaka0209/n/nda340489afde
 
 
 ***
